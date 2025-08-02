@@ -8,7 +8,7 @@ print("last_digit", last)
 first=a//100
 print("first_digit",first)
 
-middle = int((a-(first*100)-last)/10)
+middle = int((a-(first*100)-last)/10) #(a//10)%10
 print("middle_digit", middle)
 print(last*100 + middle*10 +first)
 
@@ -18,4 +18,5 @@ last =a%10
 first_two_digit=a//10
 last_of_first_two =first_two_digit%10
 first_of_first_two =first_two_digit//10
+
 print(last*100 + last_of_first_two*10 +first_of_first_two)
